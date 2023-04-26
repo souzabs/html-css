@@ -1,0 +1,20 @@
+body {
+    background-color: cornsilk;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+h1 {
+    background-color: chartreuse;
+    font-size: 30px;
+}
+
+h2 {
+    background-color: crimson;
+    font-size: 20px;
+
+}
+
+p {
+    text-align: justify;
+}
