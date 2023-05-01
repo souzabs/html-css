@@ -1,4 +1,23 @@
 @charset "UTF-8";
+
+@font-face{
+    font-family:Tangerine;
+    src: url(../fontes/Tangerine-Regular.ttf) format(truetype);
+    font-weight: normal;
+}
+
+@font-face{
+    font-family:Kaushan;
+    src: url(../fontes/KaushanScript-Regular.ttf) format(truetype);
+    font-weight: normal;
+}
+
+:root{
+    --fonte1: Times, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Tangerine', sans-serif;
+    --fonte3: 'Kaushan', sans-serif;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -7,6 +26,7 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -37,8 +57,10 @@ header a:hover, footer a:hover  {
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
-    padding-left: 4%;
+    line-height: 120%;
+    padding-left: 2%;
+    font-family: var(--fonte2);
+    font-size: 205%;
 }
 
 section.normal{
@@ -52,7 +74,8 @@ section.imagem{
 }
 
 section.imagem > p{
-    width: 400px;
+   display: inline-block;
+   padding: 5px;
     background-color: rgba(0, 0, 0, 0.189);
 }
 
