@@ -13,6 +13,7 @@
         table{
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -23,6 +24,12 @@
         thead, tfoot{
             background-color: rgba(0, 0, 0, 0.876);
             color: white;
+        }
+        
+        thead > tr > th{
+            position: sticky;
+            top: 0;                                    /*UTILIZAR PARA FAZER ROLAGEM FIXA */
+            background-color: rgba(0, 0, 0, 0.876);
         }
 
         td.num{
